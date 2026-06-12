@@ -42,7 +42,7 @@ function HeroHeading() {
   const done = count >= FULL.length;
 
   return (
-    <h1 className="font-heading mx-auto max-w-4xl text-5xl leading-[1.05] font-extrabold tracking-tight text-balance sm:text-6xl md:text-7xl">
+    <h1 className="font-heading mx-auto max-w-4xl text-4xl leading-[1.05] font-extrabold tracking-tight text-balance sm:text-5xl md:text-6xl lg:text-7xl">
       {t1}
       {t2 && <em className="text-accent not-italic">{t2}</em>}
       {!done && (
@@ -95,12 +95,12 @@ export default function Hero() {
         style={{ background: "radial-gradient(ellipse at 100% 40%, #0e1f4018 0%, transparent 60%)" }}
       />
 
-      <div className="relative mx-auto max-w-5xl px-4 pt-28 pb-28 text-center sm:px-6 sm:pt-40 sm:pb-40">
+      <div className="relative mx-auto max-w-5xl px-4 pt-20 pb-20 text-center sm:px-6 sm:pt-36 sm:pb-36">
         <motion.div
           style={reduceMotion ? undefined : { y: textY, scale: textScale, opacity: textOpacity }}
         >
           <FadeIn>
-            <p className="mx-auto mb-8 inline-block rounded-full border border-accent/20 bg-accent-soft px-5 py-2 text-base font-semibold tracking-wide text-fg/90">
+            <p className="mx-auto mb-8 inline-block whitespace-nowrap rounded-full border border-accent/20 bg-accent-soft px-4 py-2 text-sm font-semibold tracking-wide text-fg/90 sm:px-5 sm:text-base">
               Free demo first.{" "}
               <span className="text-accent">Pay only if you love it.</span>
             </p>

@@ -26,7 +26,7 @@ export default function Header() {
         <div className="flex items-center gap-3 sm:gap-5">
           <a
             href={site.phoneHref}
-            className="flex min-h-11 items-center gap-2 font-semibold text-fg transition-colors hover:text-accent"
+            className="hidden sm:flex min-h-11 items-center gap-2 font-semibold text-fg transition-colors hover:text-accent"
           >
             <svg
               className="h-5 w-5 text-accent"
@@ -47,15 +47,10 @@ export default function Header() {
           <Magnetic strength={0.2}>
             <a
               href="#contact"
-              className="group relative flex min-h-11 items-center gap-1.5 overflow-hidden rounded-full bg-fg px-5 font-bold text-night transition-colors duration-300 hover:bg-accent"
+              className="group relative flex min-h-11 items-center gap-1.5 overflow-hidden rounded-full bg-fg px-4 text-sm font-bold text-night transition-colors duration-300 hover:bg-accent sm:px-5 sm:text-base"
             >
-              Get your free demo
-              <span
-                aria-hidden="true"
-                className="hidden transition-transform duration-300 group-hover:translate-x-1 sm:inline"
-              >
-                →
-              </span>
+              <span className="sm:hidden">Free demo</span>
+              <span className="hidden sm:inline">Get your free demo</span>
               <span
                 aria-hidden="true"
                 className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/50 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"

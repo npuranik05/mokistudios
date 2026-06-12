@@ -56,7 +56,7 @@ export default function DemoShowcase() {
   const opacity = useTransform(scrollYProgress, [0, 0.35], [0.3, 1]);
 
   return (
-    <section className="mx-auto max-w-5xl px-4 pb-20 text-center sm:px-6 sm:pb-28">
+    <section className="mx-auto max-w-5xl px-4 pb-14 text-center sm:px-6 sm:pb-24">
       <h2 className="font-heading mx-auto max-w-2xl text-4xl font-bold tracking-tight text-balance sm:text-5xl">
         <WordReveal text="Your free demo could look like this" />
       </h2>

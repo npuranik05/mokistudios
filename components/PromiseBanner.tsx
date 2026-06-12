@@ -16,7 +16,7 @@ export default function PromiseBanner() {
   const bgX = useTransform(scrollYProgress, [0, 1], [-40, 40]);
 
   return (
-    <section className="mx-auto max-w-6xl px-4 pb-20 sm:px-6 sm:pb-28">
+    <section className="mx-auto max-w-6xl px-4 pb-14 sm:px-6 sm:pb-24">
       <ScrollZoom from={0.9}>
         <div
           ref={ref}
@@ -49,30 +49,30 @@ export default function PromiseBanner() {
             }}
           />
 
-          <div className="relative px-8 py-14 text-center sm:px-16 sm:py-20">
+          <div className="relative px-6 py-12 text-center sm:px-14 sm:py-20">
             <p className="text-xs font-bold tracking-[0.35em] text-lime/60 uppercase mb-6">
               Our promise
             </p>
 
             <p
-              className="font-heading mx-auto max-w-4xl text-4xl font-extrabold text-balance leading-[1.08] sm:text-5xl md:text-6xl"
+              className="font-heading mx-auto max-w-4xl text-3xl font-extrabold text-balance leading-[1.08] sm:text-4xl md:text-5xl lg:text-6xl"
               style={{ color: "#f4f1ea" }}
             >
               No upfront cost.{" "}
               <span style={{ color: "#4ade80" }}>No risk.</span>
             </p>
             <p
-              className="font-heading mx-auto mt-3 max-w-3xl text-3xl font-bold text-balance leading-[1.1] sm:text-4xl"
+              className="font-heading mx-auto mt-3 max-w-3xl text-2xl font-bold text-balance leading-[1.1] sm:text-3xl md:text-4xl"
               style={{ color: "#f4f1ea" }}
             >
               If you don&apos;t love your demo,{" "}
-              <span style={{ color: "#e3a857" }}>you owe us nothing.</span>
+              <span style={{ color: "#4ade80" }}>you owe us nothing.</span>
             </p>
-            <p className="mt-6 text-3xl font-bold sm:text-4xl" style={{ color: "#f4f1ea" }}>
+            <p className="mt-5 text-2xl font-bold sm:text-3xl" style={{ color: "#f4f1ea" }}>
               No hard feelings.
             </p>
 
-            <div className="mt-12">
+            <div className="mt-8 sm:mt-12">
               <Magnetic strength={0.25}>
                 <a
                   href="#contact"

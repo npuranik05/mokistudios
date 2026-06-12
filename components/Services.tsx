@@ -86,13 +86,13 @@ function DrawnCheck({ delay }: { delay: number }) {
 
 export default function Services() {
   return (
-    <section id="services" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+    <section id="services" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-24">
       <FadeIn>
         <p className="text-base font-bold tracking-[0.22em] text-muted uppercase">
           <span className="text-accent">01</span> · What we do
         </p>
       </FadeIn>
-      <h2 className="font-heading mt-2 max-w-2xl text-5xl font-bold tracking-tight text-balance sm:text-6xl">
+      <h2 className="font-heading mt-2 max-w-2xl text-4xl font-bold tracking-tight text-balance sm:text-5xl md:text-6xl">
         <WordReveal text="Two simple ways we help your business grow" />
       </h2>
 

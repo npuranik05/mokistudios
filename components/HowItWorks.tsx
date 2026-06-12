@@ -37,13 +37,13 @@ export default function HowItWorks() {
 
   return (
     <section id="how-it-works" className="border-y border-line bg-panel">
-      <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+      <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-24">
         <FadeIn>
           <p className="text-base font-bold tracking-[0.22em] text-muted uppercase">
             <span className="text-accent">02</span> · How it works
           </p>
         </FadeIn>
-        <h2 className="font-heading mt-2 max-w-2xl text-5xl font-bold tracking-tight text-balance sm:text-6xl">
+        <h2 className="font-heading mt-2 max-w-2xl text-4xl font-bold tracking-tight text-balance sm:text-5xl md:text-6xl">
           <WordReveal text="See your website before you spend a dime" />
         </h2>
 

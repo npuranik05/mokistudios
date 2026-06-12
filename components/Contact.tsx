@@ -127,7 +127,7 @@ export default function Contact() {
         aria-hidden="true"
         className="pointer-events-none absolute -bottom-40 left-1/2 h-96 w-160 -translate-x-1/2 rounded-full bg-accent/8 blur-3xl"
       />
-      <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+      <div className="relative mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-24">
         <div className="grid gap-12 lg:grid-cols-5 lg:gap-16">
           <div className="lg:col-span-2">
             <FadeIn>
@@ -254,18 +254,12 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="group relative mt-10 flex min-h-14 w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-fg px-8 text-lg font-bold text-night transition-colors duration-300 hover:bg-accent disabled:cursor-not-allowed disabled:opacity-60"
+                  className="group relative mt-10 flex min-h-14 w-full items-center justify-center gap-2 overflow-hidden rounded-2xl bg-accent px-8 text-lg font-extrabold text-night transition-colors duration-300 hover:bg-accent-dim disabled:cursor-not-allowed disabled:opacity-60"
                 >
-                  {status === "sending" ? "Sending…" : "Request my free demo"}
+                  {status === "sending" ? "Sending…" : "Send my request"}
                   <span
                     aria-hidden="true"
-                    className="transition-transform duration-300 group-hover:translate-x-1.5"
-                  >
-                    →
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/50 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"
+                    className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 ease-out group-hover:translate-x-full"
                   />
                 </button>
 
